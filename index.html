@@ -7,9 +7,43 @@
     <link rel = "stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Welcome to Katik</h1>
         <p>Sebuah web untuk menghitung nilai luas dan keliling bangun datar :]</p>
     </header>
+    <main>
+        <section class ="selection-content">
+            <button href="#">Segitiga</button>
+            <button href="#">Jajar Genjang</button>
+        </section>
+
+        <section>
+            <header>
+                <h1>Luas Segitiga</h1>
+            </header>
+            <article>
+                <p>Rumus Luas Segitiga</p>
+                <div>
+                    <img src="assets/segitiga.jpg" width="100">
+                </div>
+            </article>
+            <hr /> <!-- garis panjang -->
+            <form>
+                <header>
+                    <h1>Hitung Luas segitiga</h1>
+                </header>
+                <div>
+                    <label for="pjg-alas">Panjang Alas:</label>
+                    <input id="pjg-alas" />
+                </div>
+                <div>
+                    <label for="tinggi">Tinggi:</label>
+                    <input id = "tinggi"/>
+                </div>
+                <p id="result">Hasil perhitungan:</p>
+                <button>Hitung</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
