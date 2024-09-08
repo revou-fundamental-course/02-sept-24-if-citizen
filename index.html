@@ -13,18 +13,19 @@
     </header>
     <main>
         <section class ="selection-content">
-            <button href="#">Segitiga</button>
-            <button href="#">Jajar Genjang</button>
+            <button class = "btn-menu" href="#">Segitiga</button>
+            <button class="btn-menu" href="#">Jajar Genjang</button>
         </section>
 
-        <section>
+        <section class="content">
             <header>
                 <h1>Luas Segitiga</h1>
             </header>
             <article>
                 <p>Rumus Luas Segitiga</p>
-                <div>
-                    <img src="assets/segitiga.jpg" width="100">
+                <div class = "center">
+                    <img src="assets/segitiga.jpg" width="200px">
+                    <p>L = 1/2 a x t</p>
                 </div>
             </article>
             <hr /> <!-- garis panjang -->
@@ -33,15 +34,18 @@
                     <h1>Hitung Luas segitiga</h1>
                 </header>
                 <div>
-                    <label for="pjg-alas">Panjang Alas:</label>
-                    <input id="pjg-alas" />
+                    <table>
+                        <tr>
+                            <td><label for="pjg-alas">Panjang Alas:</label></td>
+                            <td><input class="input-field" id="pjg-alas" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tinggi">Tinggi:</label></td>
+                            <td><input class="input-field" id = "tinggi"/></td>
+                        </tr>
+                    </table>
                 </div>
-                <div>
-                    <label for="tinggi">Tinggi:</label>
-                    <input id = "tinggi"/>
-                </div>
-                <p id="result">Hasil perhitungan:</p>
-                <button>Hitung</button>
+                <button type="submit" class="btn-calc">Hitung</button>
             </form>
         </section>
     </main>
