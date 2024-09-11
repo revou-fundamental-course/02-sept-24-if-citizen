@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Matematik</title>
     <link rel = "stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
 </head>
 <body>
     <header class="main-header">
-        <h1>Welcome to Katik</h1>
+        <h1>Welcome to Kalkulator Matematik</h1>
         <p>Sebuah web untuk menghitung nilai luas dan keliling bangun datar :]</p>
     </header>
     <main>
@@ -18,21 +18,27 @@
             <button class="btn-menu" href="#">Jajar Genjang</button>
         </section>
 
-        <section class="content">
-            <header>
-                <h1>Luas Segitiga</h1>
-            </header>
-            <article>
-                <p>Rumus Luas Segitiga</p>
-                <div class = "center">
-                    <img src="assets/segitiga.jpg" width="200px">
-                    <p>L = 1/2 a x t</p>
+        <section class="content" id="section-segitiga">
+            <header class="judul-bangun">
+                <h1>Segitiga</h1>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Hitung</button>
+                    <div class="dropdown-content" id = "list-items">
+                    <a href="#article-luas-segitiga">Luas</a>
+                    <a href="#article-keliling-segitiga">Keliling</a>
+                    
+                    </div>
                 </div>
+            </header>
+            <!-- Luas segitiga -->
+            <article class="center" id="article-luas-segitiga">
+                    <img src="assets/segitiga.jpg" width="200px">
+                    <p>Rumus Luas Segitiga</p>
+                    <p>L = 1/2 a x t</p>
             </article>
-            <hr /> <!-- garis panjang -->
             <form name="hitung-luas-segitiga" >
                 <header>
-                    <h1>Hitung Luas segitiga</h1>
+                    <h3>Hitung Luas segitiga</h3>
                 </header>
                 <div>
                     <!-- field input -->
@@ -60,7 +66,57 @@
                         </tr>
                     </table>
                 </div>
-                <button type="button" class="btn-calc" onclick="return luasSegitiga()">Hitung</button>
+                <br>
+                <button type="button" class="btn-calc" onclick="luasSegitiga()">Hitung</button>
+                <button type="button" class="btn-calc" onclick="resetLuasSegitiga()"> Reset</button>
+            </form>
+            <br>
+            <hr>
+            <!-- keliling segitiga -->
+            <article class="center" id="article-keliling-segitiga">
+                <img src="assets/segitiga.jpg" width="200px">
+                <p>Rumus Keliling Segitiga</p>
+                <p>K = a + b + c</p>
+            </article>
+            <form name="hitung-kel-segitiga" >
+                <header>
+                    <h3>Hitung Keliling segitiga</h3>
+                </header>
+                <div>
+                    <!-- field input -->
+                    <table>
+                        
+                        <tr>
+                            <td><label for="a">Sisi 1 (a) :</label></td>
+                            <td><input class="input-field" name="a" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="b">Sisi 2 (b):</label></td>
+                            <td><input class="input-field" name = "b"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="c">Sisi 3 (c):</label></td>
+                            <td><input class="input-field" name = "c"/></td>
+                        </tr>
+                        
+                        <!-- rumus dan hasil  -->
+                        <tr>
+                            <td><label>Keliling: </label></td>
+                            <td><p id="detail-k1"></p></td>
+                        </tr>
+                        <tr></tr>
+                            <td><label> </label></td>
+                            <td><p id="detail-k2"> </p></td>
+                        </tr>
+                        <tr></tr>
+                            <td><label> </label></td>
+                            <td><p id="detail-k3"> </p></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <button type="button" class="btn-calc" onclick="kelSegitiga()">Hitung</button>
+                <button type="button" class="btn-calc" onclick="resetKelSegitiga()"> Reset</button>
             </form>
         </section>
     </main>
