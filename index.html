@@ -30,27 +30,37 @@
                 </div>
             </article>
             <hr /> <!-- garis panjang -->
-            <form>
+            <form name="hitung-luas-segitiga" >
                 <header>
                     <h1>Hitung Luas segitiga</h1>
                 </header>
                 <div>
+                    <!-- field input -->
                     <table>
                         <tr>
                             <td><label for="pjg-alas">Panjang Alas:</label></td>
-                            <td><input class="input-field" id="pjg-alas" /></td>
+                            <td><input class="input-field" name="pjg-alas" /></td>
                         </tr>
                         <tr>
                             <td><label for="tinggi">Tinggi:</label></td>
-                            <td><input class="input-field" id = "tinggi"/></td>
+                            <td><input class="input-field" name = "tinggi"/></td>
                         </tr>
+                        <!-- rumus dan hasil  -->
                         <tr>
                             <td><label>Luas: </label></td>
-                            <td><input class="output-field" id="Hasil"> </td>
+                            <td><p id="detail1"></p></td>
+                        </tr>
+                        <tr></tr>
+                            <td><label> </label></td>
+                            <td><p id="detail2"> </p></td>
+                        </tr>
+                        <tr></tr>
+                            <td><label> </label></td>
+                            <td><p id="detail3"> </p></td>
                         </tr>
                     </table>
                 </div>
-                <button type="submit" class="btn-calc">Hitung</button>
+                <button type="button" class="btn-calc" onclick="return luasSegitiga()">Hitung</button>
             </form>
         </section>
     </main>
