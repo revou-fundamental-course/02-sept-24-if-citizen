@@ -119,3 +119,4 @@ function validasi(variabel){
         return true;
     }
 }
+

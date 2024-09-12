@@ -19,6 +19,7 @@ body{
     display: flex;
     /* background-color: DodgerBlue; */
     text-align: center;
+
 }
 .content{
     margin: 15px;
@@ -32,6 +33,7 @@ body{
     /* width: 100%; */
     /* padding: 0 15px; */
     overflow: hidden;
+    
 }
 .btn-menu{
     background-color: #555;
@@ -43,6 +45,7 @@ body{
     padding: 15px;
     font-size: 17px;
     width: 50%;
+    padding-left: 20%;
 
 }
 .btn-menu:hover{
@@ -105,17 +108,25 @@ body{
   }
 
   .btn-calc{
-
+    margin-left: 20%;
+    background-color: #758a96;
+    padding: 10px;
+    border: none;
+    color: white;
   }
-  #myBtn {
-    display: none; /* Hidden by default */
+
+  .btn-calc:hover{
+    background-color: #555;
+  }
+
+  .btn-to-top {
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: rgb(55, 132, 209); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -123,7 +134,7 @@ body{
     font-size: 18px; /* Increase font size */
   }
   
-  #myBtn:hover {
+  .btn-to-top:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
   

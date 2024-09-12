@@ -8,7 +8,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header" id="main-header">
         <h1>Welcome to Kalkulator Matematik</h1>
         <p>Sebuah web untuk menghitung nilai luas dan keliling bangun datar :]</p>
     </header>
@@ -60,7 +60,7 @@
                             <td><label> </label></td>
                             <td><p id="detail2"> </p></td>
                         </tr>
-                        <tr></tr>
+                        <tr>
                             <td><label> </label></td>
                             <td><p id="detail3"> </p></td>
                         </tr>
@@ -119,7 +119,9 @@
                 <button type="button" class="btn-calc" onclick="resetKelSegitiga()"> Reset</button>
             </form>
         </section>
-		
+        <br>
+        <br>
+		<hr>
 <!-- jajar genjang -->
         <section class="content" id="section-jajargenjang">
             <header class="judul-bangun">
@@ -217,7 +219,7 @@
                 <button type="button" class="btn-calc" onclick="resetKelJajargenjang()"> Reset</button>
             </form>
         </section>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <a class="btn-to-top" href="#main-header">Back to top</a>
 
     </main>
 </body>
